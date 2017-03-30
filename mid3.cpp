@@ -11,7 +11,6 @@ double getPonderal(double mass, double height);
 
 #ifdef UTEST
 int unit_test(double tolerance);
-#endif
 
 double codes[] = {
     135.000000,  50.000000,   13.572088,
@@ -174,12 +173,14 @@ double codes[] = {
     153.086627,  73.519693,   17.549677,
     153.086627,  75.267482,   17.826726,
     153.086627,  76.474839,   18.016858 };
+#endif
+
 
 int main(int argc, char *argv[])
 {
 
 #ifdef UTEST
-    unit_test(.01);
+    unit_test(0.01);
     return 0;
 #endif
 
